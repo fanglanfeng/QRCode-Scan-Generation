@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="b7v-Oe-0xD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="KdF-c6-m8O">
+            <objects>
+                <navigationController id="b7v-Oe-0xD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pzc-fW-Oun">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4Uf-PC-4w3" kind="relationship" relationship="rootViewController" id="Gk0-By-e7h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30i-at-MEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-688" y="292"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mWd-BI-FFu">
+            <objects>
+                <viewController id="4Uf-PC-4w3" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uGB-Bg-1NH"/>
+                        <viewControllerLayoutGuide type="bottom" id="7T7-pp-fEu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ygx-vj-mYW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ceV-e1-k8j">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="XHU-fU-tbQ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="te0-o7-fPm">
+                                <rect key="frame" x="550" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="navigationbar_pop"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="keyPath" value="77EF7C30-C86F-41F7-A62F-698FF12A37B7"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickQR:" destination="4Uf-PC-4w3" eventType="touchUpInside" id="J50-BM-zlr"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W35-be-MUA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72" y="292"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navigationbar_pop" width="30" height="30"/>
+    </resources>
+</document>
